@@ -115,7 +115,7 @@
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.Size = new System.Drawing.Size(120, 20);
             this.txtCantidadProducto.TabIndex = 7;
-            
+            this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadProducto_KeyPress);
             // 
             // rdbCofarma
             // 
@@ -192,7 +192,7 @@
             // 
             // cmbTipoMedicamento
             // 
-            this.cmbTipoMedicamento.FormattingEnabled = true;
+            this.cmbTipoMedicamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoMedicamento.Items.AddRange(new object[] {
             "Analgésico",
             "Analéptico",
@@ -204,6 +204,8 @@
             this.cmbTipoMedicamento.Name = "cmbTipoMedicamento";
             this.cmbTipoMedicamento.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoMedicamento.TabIndex = 16;
+            
+
             // 
             // Form1
             // 
