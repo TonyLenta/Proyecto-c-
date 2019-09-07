@@ -37,7 +37,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblSucursalFarmacia = new System.Windows.Forms.Label();
             this.txtNombreMedicamento = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.rdbCofarma = new System.Windows.Forms.RadioButton();
             this.rdbEmpsephar = new System.Windows.Forms.RadioButton();
             this.rdbCemefar = new System.Windows.Forms.RadioButton();
@@ -109,16 +109,18 @@
             this.txtNombreMedicamento.Size = new System.Drawing.Size(120, 20);
             this.txtNombreMedicamento.TabIndex = 6;
             // 
-            // textBox2
+            // txtCantidadProducto
             // 
-            this.textBox2.Location = new System.Drawing.Point(360, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtCantidadProducto.Location = new System.Drawing.Point(360, 159);
+            this.txtCantidadProducto.Name = "txtCantidadProducto";
+            this.txtCantidadProducto.Size = new System.Drawing.Size(120, 20);
+            this.txtCantidadProducto.TabIndex = 7;
+            
             // 
             // rdbCofarma
             // 
             this.rdbCofarma.AutoSize = true;
+            this.rdbCofarma.Checked = true;
             this.rdbCofarma.Location = new System.Drawing.Point(360, 213);
             this.rdbCofarma.Name = "rdbCofarma";
             this.rdbCofarma.Size = new System.Drawing.Size(64, 17);
@@ -177,6 +179,7 @@
             this.btnOk.TabIndex = 14;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnBorrar
             // 
@@ -215,7 +218,7 @@
             this.Controls.Add(this.rdbCemefar);
             this.Controls.Add(this.rdbEmpsephar);
             this.Controls.Add(this.rdbCofarma);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCantidadProducto);
             this.Controls.Add(this.txtNombreMedicamento);
             this.Controls.Add(this.lblSucursalFarmacia);
             this.Controls.Add(this.label5);
@@ -240,7 +243,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSucursalFarmacia;
         private System.Windows.Forms.TextBox txtNombreMedicamento;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCantidadProducto;
         private System.Windows.Forms.RadioButton rdbCofarma;
         private System.Windows.Forms.RadioButton rdbEmpsephar;
         private System.Windows.Forms.RadioButton rdbCemefar;
