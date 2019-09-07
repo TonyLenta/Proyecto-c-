@@ -108,6 +108,7 @@
             this.txtNombreMedicamento.Name = "txtNombreMedicamento";
             this.txtNombreMedicamento.Size = new System.Drawing.Size(120, 20);
             this.txtNombreMedicamento.TabIndex = 6;
+            this.txtNombreMedicamento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             // 
             // txtCantidadProducto
             // 
@@ -189,6 +190,7 @@
             this.btnBorrar.TabIndex = 15;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // cmbTipoMedicamento
             // 
@@ -204,8 +206,6 @@
             this.cmbTipoMedicamento.Name = "cmbTipoMedicamento";
             this.cmbTipoMedicamento.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoMedicamento.TabIndex = 16;
-            
-
             // 
             // Form1
             // 
@@ -229,7 +229,8 @@
             this.Controls.Add(this.lblNombreMedicamento);
             this.Controls.Add(this.lblTitulo);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SIMULADOR DE PEDIDOS FARMACÉUTICOS";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
